@@ -8,19 +8,21 @@ namespace Poo.Models
     public class Pessoa
     {
         private string _nome; // Atributo
+        private int _idade; // Atributo
         
 
 
         public string Nome
         {
-            get {
+            get
+            {
                 return _nome.ToUpper();
             }
             set
             {
                 if (value == "")
                 {
-                    throw new ArgumentException ("O nome não pode ser vazio");
+                    throw new ArgumentException("O nome não pode ser vazio");
                 }
                 else
                 {
@@ -28,10 +30,27 @@ namespace Poo.Models
                 }
             }
         }
-        public int Idade { get; set; }
+        public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
+        public string Sobrenome { get; set; }
+        public int Idade
+        {
+            get => _idade;
+
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("A idade não pode ser negativa");
+                }
+                else
+                {
+                    _idade = value;
+                }
+            }
+        }
         public void Apresentar()
         {
-            Console.WriteLine($"Olá, meu nome é {Nome} e tenho {Idade} anos.");
+            Console.WriteLine($"Olá, meu nome é {NomeCompleto} e tenho {Idade} anos.");
         }
     }
    
