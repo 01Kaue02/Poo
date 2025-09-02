@@ -1,12 +1,9 @@
 ﻿using Poo.Models;
 
-Pessoa p1 = new Pessoa();
-p1.Nome = "Kauê";
-p1.Sobrenome = "Silva";
+Pessoa p1 = new Pessoa(nome: "Kauê", sobrenome: "Silva");
 
-Pessoa p2 = new Pessoa();
-p2.Nome = "Jhessica";
-p2.Sobrenome = "Isabel";
+
+Pessoa p2 = new Pessoa(nome: "Jhessica", sobrenome: "Isabel");
 
 
 Curso cursoDeIngles = new Curso();
