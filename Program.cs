@@ -1,20 +1,62 @@
 ﻿using Poo.Models;
 
-Stack<int> pilha = new Stack<int>();
-pilha.Push(2);
-pilha.Push(4);
-pilha.Push(6);
-pilha.Push(8);
-foreach (var item in pilha)
+Dictionary<string, string> estados = new Dictionary<string, string>();
+estados.Add("SP", "São Paulo");
+estados.Add("RJ", "Rio de Janeiro");
+estados.Add("MG", "Minas Gerais");
+
+foreach (var item in estados)
 {
-    Console.WriteLine(item);
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
 }
-Console.WriteLine($"Removendo o elemento:{pilha.Pop()}");
-pilha.Push(10);
-foreach (var item in pilha)
+Console.WriteLine($"-------------------");
+estados.Remove("MG");
+estados["SP"] = "São Paulo - Atualizado";
+foreach (var item in estados)
 {
-    Console.WriteLine(item);
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
 }
+string chave = "MG";
+Console.WriteLine("Verificando se o dicionário contém a chave: " + chave);
+if (estados.ContainsKey(chave))
+{
+    Console.WriteLine("Dicionário contém a chave: " + chave);
+}
+else
+{
+    Console.WriteLine("Dicionário não contém a chave: " + chave);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Stack<int> pilha = new Stack<int>();
+//pilha.Push(2);
+//pilha.Push(4);
+//pilha.Push(6);
+//pilha.Push(8);
+//foreach (var item in pilha)
+//{
+//    Console.WriteLine(item);
+//}
+//Console.WriteLine($"Removendo o elemento:{pilha.Pop()}");
+//pilha.Push(10);
+//foreach (var item in pilha)
+//{
+//    Console.WriteLine(item);
+//}
 
 
 
