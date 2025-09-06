@@ -1,23 +1,56 @@
 ﻿using Poo.Models;
 
-Queue<int> fila = new Queue<int>();
-fila.Enqueue(2);
-fila.Enqueue(4);
-fila.Enqueue(6);
-fila.Enqueue(8);
-
-foreach (var item in fila)
+Stack<int> pilha = new Stack<int>();
+pilha.Push(2);
+pilha.Push(4);
+pilha.Push(6);
+pilha.Push(8);
+foreach (var item in pilha)
+{
+    Console.WriteLine(item);
+}
+Console.WriteLine($"Removendo o elemento:{pilha.Pop()}");
+pilha.Push(10);
+foreach (var item in pilha)
 {
     Console.WriteLine(item);
 }
 
-Console.WriteLine($"Removendo o elemento:{ fila.Dequeue()}"); 
 
 
-foreach (var item in fila)
-{
-    Console.WriteLine(item);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Queue<int> fila = new Queue<int>();
+//fila.Enqueue(2);
+//fila.Enqueue(4);
+//fila.Enqueue(6);
+//fila.Enqueue(8);
+//
+//foreach (var item in fila)
+//{
+//    Console.WriteLine(item);
+//}
+//
+//Console.WriteLine($"Removendo o elemento:{fila.Dequeue()}"); 
+//fila.Enqueue(10);
+//
+//
+//foreach (var item in fila)
+//{
+//    Console.WriteLine(item);
+//}
 
 
 
