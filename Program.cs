@@ -1,11 +1,16 @@
 ﻿using Poo.Models;
-
-
-string[] linhas = File.ReadAllLines("Arquivo/ArquivoLeitura.txt");
-
-foreach (string linha in linhas)
+try
 {
-    Console.WriteLine(linha);
+
+    string[] linhas = File.ReadAllLines("Arquivo/ArquivoLeitura.txt");
+
+    foreach (string linha in linhas)
+    {
+        Console.WriteLine(linha);
+    }
+} catch (Exception ex)
+{
+    Console.WriteLine($"Ocorreu um erro: {ex.Message}");
 }
 
 
