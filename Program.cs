@@ -1,31 +1,106 @@
 ﻿using Poo.Models;
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
-estados.Add("SP", "São Paulo");
-estados.Add("RJ", "Rio de Janeiro");
-estados.Add("MG", "Minas Gerais");
+Pessoa p1 = new Pessoa(nome: "Kauê", sobrenome: "Silva");
 
-foreach (var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
-Console.WriteLine($"-------------------");
-estados.Remove("MG");
-estados["SP"] = "São Paulo - Atualizado";
-foreach (var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
-string chave = "MG";
-Console.WriteLine("Verificando se o dicionário contém a chave: " + chave);
-if (estados.ContainsKey(chave))
-{
-    Console.WriteLine("Dicionário contém a chave: " + chave);
-}
-else
-{
-    Console.WriteLine("Dicionário não contém a chave: " + chave);
-}
+(string nome, string sobrenome) = p1;
+
+Console.WriteLine($"Nome: {nome} {sobrenome}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//LeituraArquivo arquivo = new LeituraArquivo();
+//var (sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivo/ArquivoLeitura.txt");
+//
+//if (sucesso)
+//{
+//    Console.WriteLine($"Quantidade de linhas do arquivo: {quantidadeLinhas}");
+//    foreach (string linha in linhasArquivo)
+//    {
+//        Console.WriteLine(linha);
+//    }
+//}
+//else
+//{
+//    Console.WriteLine("Não foi possível ler o arquivo");
+//}
+
+
+
+
+
+
+
+
+
+//(int, string, string, decimal) tupla = (1, "Kauê", "Silva", 10.5M);
+////ValueTuple<int, string, string, decimal> outroExemploTupla = (2, "Jhessica", "Isabel", 1.65M);
+////var outroExemploTuplaCreate = Tuple.Create(3, "Ana", "Beatriz", 1.70M);
+//
+//Console.WriteLine($"Id: {tupla.Item1}");
+//Console.WriteLine($"Nome: {tupla.Item2}");
+//Console.WriteLine($"Sobrenome: {tupla.Item3}");
+//Console.WriteLine($"Altura: {tupla.Item4}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Dictionary<string, string> estados = new Dictionary<string, string>();
+//estados.Add("SP", "São Paulo");
+//estados.Add("RJ", "Rio de Janeiro");
+//estados.Add("MG", "Minas Gerais");
+//
+//foreach (var item in estados)
+//{
+//    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+//}
+//Console.WriteLine($"-------------------");
+//estados.Remove("MG");
+//estados["SP"] = "São Paulo - Atualizado";
+//foreach (var item in estados)
+//{
+//    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+//}
+//string chave = "MG";
+//Console.WriteLine("Verificando se o dicionário contém a chave: " + chave);
+//if (estados.ContainsKey(chave))
+//{
+//    Console.WriteLine("Dicionário contém a chave: " + chave);
+//}
+//else
+//{
+//    Console.WriteLine("Dicionário não contém a chave: " + chave);
+//}
 
 
 
