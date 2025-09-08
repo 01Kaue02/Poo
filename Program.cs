@@ -1,12 +1,43 @@
 ﻿using Poo.Models;
+using Newtonsoft.Json;
 
-Pessoa p1 = new Pessoa(nome: "Kauê", sobrenome: "Silva");
+Vendas v1 = new Vendas(1, "Caneta", 3.45M);
 
-(string nome, string sobrenome) = p1;
-
-Console.WriteLine($"Nome: {nome} {sobrenome}");
+string serializado = JsonConvert.SerializeObject(v1);
 
 
+
+
+//if (numero % 2 == 0)
+//{
+//    Console.WriteLine($"O número {numero} é par");
+//}
+//else
+//{
+//    Console.WriteLine($"O número {numero} é ímpar");
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Pessoa p1 = new Pessoa(nome: "Kauê", sobrenome: "Silva");
+//
+//(string nome, string sobrenome) = p1;
+//
+//Console.WriteLine($"Nome: {nome} {sobrenome}");
+//
+//
 
 
 
