@@ -1,9 +1,20 @@
 ﻿using Poo.Models;
 using Newtonsoft.Json;
 
+List<Vendas> listaVendas = new List<Vendas>();
 Vendas v1 = new Vendas(1, "Caneta", 3.45M);
+Vendas v2 = new Vendas(2, "Caderno", 15.90M);
+Vendas v3 = new Vendas(3, "Borracha", 2.0M);
 
-string serializado = JsonConvert.SerializeObject(v1);
+listaVendas.Add(v1);
+listaVendas.Add(v2);
+listaVendas.Add(v3);
+
+string serializado = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
+
+File.WriteAllText("Arquivo/venda.json", serializado);
+Console.WriteLine(serializado);
+
 
 
 

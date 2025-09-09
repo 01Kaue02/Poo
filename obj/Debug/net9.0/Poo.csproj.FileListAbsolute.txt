@@ -13,3 +13,6 @@ C:\Users\kauel\OneDrive\Área de Trabalho\Poo\obj\Debug\net9.0\Poo.pdb
 C:\Users\kauel\OneDrive\Área de Trabalho\Poo\obj\Debug\net9.0\Poo.genruntimeconfig.cache
 C:\Users\kauel\OneDrive\Área de Trabalho\Poo\obj\Debug\net9.0\ref\Poo.dll
 C:\Users\kauel\OneDrive\Área de Trabalho\Poo\obj\Debug\net9.0\Poo.sourcelink.json
+C:\Users\kauel\OneDrive\Área de Trabalho\Poo\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\kauel\OneDrive\Área de Trabalho\Poo\obj\Debug\net9.0\Poo.csproj.AssemblyReference.cache
+C:\Users\kauel\OneDrive\Área de Trabalho\Poo\obj\Debug\net9.0\Poo.csproj.Up2Date
