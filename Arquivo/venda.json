@@ -1,17 +1,20 @@
-[
+[  
   {
     "Id": 1,
     "Produto": "Caneta",
-    "Preco": 3.45
+    "Preco": 3.45,
+    "DataVenda": "2025-09-09T20:30:18.3743531-03:00"
   },
   {
     "Id": 2,
     "Produto": "Caderno",
-    "Preco": 15.90
+    "Preco": 15.90,
+    "DataVenda": "2025-09-09T20:30:18.3743531-03:00"
   },
   {
     "Id": 3,
     "Produto": "Borracha",
-    "Preco": 2.0
+    "Preco": 2.0,
+    "DataVenda": "2025-09-09T20:30:18.3743531-03:00"
   }
 ]
